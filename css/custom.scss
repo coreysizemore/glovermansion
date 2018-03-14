@@ -4,11 +4,80 @@
 /*******************     version 1.0       ********************/
 /**************************************************************/
 
+$green: #737245;
 
+a#searchopen:link, a#searchopen:visited, a#mobileopen:link, a#mobileopen:visited {
+	color: $green;
+}
 
+header.home_default_image {
+	background: url('../img/home.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
 
+header.page_default_image {
+	background: url('../img/home.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
 
+#home_logo {
+	#home_page_nav { 
+		ul {
+			li {
+				a:link,
+				a:visited {
+					background: $green;
+				}
+			}
+		}
+	}
+}
 
+.appointment {
+	background: $green;
+}
+
+.breadcrumb_wrapper {
+	span.breadcrumbs {
+		a:link,a:visited {
+			color: $green;
+		}
+	}
+}
+
+.content,
+.sidebar {
+	h1,h3 {
+		color: $green;
+	}
+	
+	a:link,
+	a:visited {
+		color: $green;
+	}
+	
+	a.button:link,
+	a.button:visited {
+		background: $green;
+		margin: 5px 10px 5px 0px;
+	}
+	
+	hr.divider {
+		background: $green;
+	}
+}
+
+.parallax.parallax_default_image {
+	background: url('../img/home.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.edit_button a:link, .edit_button a:visited {
+	background: $green;
+}
 
 
 @media (min-width: 980px) and (max-width: 1220px) {
@@ -21,8 +90,32 @@
 	
 @media (min-width: 480px) and (max-width: 767px) {
 	
+	header.home_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	header.header_page.page_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
 }
 	
 @media (min-width: 0px) and (max-width: 479px) {
+	
+	header.home_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	header.header_page.page_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
 	
 }
