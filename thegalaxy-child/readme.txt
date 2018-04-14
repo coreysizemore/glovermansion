@@ -1,4 +1,4 @@
-Alderaan Theme Child
+The Galaxy Theme Child
 http://www.coreysizemore.com/
 
 by Corey Sizemore Design & Development

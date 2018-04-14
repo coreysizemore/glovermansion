@@ -2,7 +2,7 @@
 	
 	/*
 		@package WordPress
-		@subpackage alderaan-child
+		@subpackage thegalaxy-child
 	*/
 	
 	require_once locate_template('/lib/child.php');

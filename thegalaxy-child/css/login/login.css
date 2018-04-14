@@ -27,7 +27,7 @@ body.login {
 }
 
 #loginform .submit input[type="submit"] {
-	background: #95B8BF;
+	background: #2f5971;
 	border: none;
 	box-shadow: none;
 	color: #ffffff;
@@ -45,7 +45,7 @@ body.login {
 .login #backtoblog a:active,
 .login #nav a:hover,
 .login #nav a:active {
-	color: #95B8BF;
+	color: #2f5971;
 }
 
 .login #login_error, .login .message {

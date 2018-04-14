@@ -1,0 +1,188 @@
+/* color variables */
+
+$colorone: #b3c7b1;
+$colortwo: #993220;
+$colorthree: #333333;
+
+/* end color variables */
+
+a#searchopen:link, a#searchopen:visited, a#mobileopen:link, a#mobileopen:visited {
+	color: $colorone;
+}
+
+#search,
+#mobile_nav {
+	background: rgba($colortwo, .95);
+}
+
+header.home_default_image {
+	background: url('../img/home.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+header.page_default_image {
+	background: url('../img/home.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.page-id-129 header.page_default_image {
+	background: url('../img/catering.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.page-id-85 header.page_default_image {
+	background: url('../img/table.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.page-id-125 header.page_default_image {
+	background: url('../img/outdoor.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+#home_logo {
+	margin-top: -300px;
+	
+	#home_page_nav { 
+		ul {
+			li {
+				a:link,
+				a:visited {
+					background: $colortwo;
+				}
+			}
+		}
+	}
+	
+	#logo_home {
+		h2 {
+			line-height: 24px;
+		}
+	}
+}
+
+.appointment {
+	background: $colorone;
+}
+
+.breadcrumb_wrapper {
+	span.breadcrumbs {
+		a:link,a:visited {
+			color: $colortwo;
+		}
+	}
+}
+
+.content,
+.sidebar {
+	h1,h3 {
+		color: $colortwo;
+	}
+	
+	a:link,
+	a:visited {
+		color: $colortwo;
+	}
+	
+	a.button:link,
+	a.button:visited {
+		background: $colortwo;
+		margin: 5px 10px 5px 0px;
+	}
+	
+	hr.divider {
+		background: $colortwo;
+	}
+}
+
+.parallax.parallax_default_image {
+	background: url('../img/home.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.edit_button a:link, .edit_button a:visited {
+	background: $colorone;
+}
+
+
+@media (min-width: 980px) and (max-width: 1220px) {
+	
+}
+	
+@media (min-width: 768px) and (max-width: 979px) {
+	
+}
+	
+@media (min-width: 480px) and (max-width: 767px) {
+	
+	header.home_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	header.header_page.page_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	.page-id-129 header.header_page.page_default_image {
+		background: url('../img/catering_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	.page-id-85 header.header_page.page_default_image {
+		background: url('../img/table_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	.page-id-125 header.header_page.page_default_image {
+		background: url('../img/outdoor_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+}
+	
+@media (min-width: 0px) and (max-width: 479px) {
+	
+	header.home_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	header.header_page.page_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	.page-id-129 header.header_page.page_default_image {
+		background: url('../img/catering_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	.page-id-125 header.header_page.page_default_image {
+		background: url('../img/outdoor_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+	.page-id-85 header.header_page.page_default_image {
+		background: url('../img/table_mobile.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	
+}
