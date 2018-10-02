@@ -15,77 +15,100 @@ a#searchopen:link, a#searchopen:visited, a#mobileopen:link, a#mobileopen:visited
 	background: rgba($colortwo, .95);
 }
 
-header.home_default_image {
+header {
 	background: url('../img/home2.jpg') no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-}
-
-header.page_default_image {
-	background: url('../img/home2.jpg') no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-}
-
-.page-id-129 header.page_default_image {
-	background: url('../img/catering.jpg') no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-}
-
-.page-id-85 header.page_default_image {
-	background: url('../img/table.jpg') no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-}
-
-.page-id-125 header.page_default_image {
-	background: url('../img/outdoor.jpg') no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-}
-
-.page-id-139 header.page_default_image,
-.page-id-133 header.page_default_image {
-	background: url('../img/page20.jpg') no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-}
-
-.page-id-131 header.page_default_image,
-.page-id-137 header.page_default_image {
-	background: url('../img/page21.jpg') no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-}
-
-.page-id-135 header.page_default_image {
-	background: url('../img/page22.jpg') no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-}
-
-#home_logo {
 	
-	#home_page_nav { 
-		ul {
-			li {
-				a:link,
-				a:visited {
-					background: $colortwo;
+	#nav_bar.top_navigation {
+		background: #ffffff;
+		
+		#primary_nav {
+			#menu-primary {
+				li {
+					a:link,
+					a:visited {
+						color: #303133;
+					}
+					
+					ul {
+						li {
+							a:link,
+							a:visited {
+								color: #ffffff;
+							}
+						}
+					}
 				}
 			}
 		}
 	}
 	
-	#logo_home {
-		h2 {
-			line-height: 24px;
+	#home_logo {
+		margin-top: -200px;
+		
+		img {
+			height: 250px;
+		}
+		
+		#home_page_nav {
+			ul {
+				li {
+					a:link,
+					a:visited {
+						background: $colorone;
+					}
+				}
+			}
 		}
 	}
 }
 
-.appointment {
+header#header_page {
+	background: url('../img/home2.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.page-id-129 header#header_page {
+	background: url('../img/catering.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.page-id-85 header#header_page {
+	background: url('../img/table.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.page-id-125 header#header_page {
+	background: url('../img/outdoor.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.page-id-139 header#header_page,
+.page-id-133 header#header_page {
+	background: url('../img/page20.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.page-id-131 header#header_page,
+.page-id-137 header#header_page {
+	background: url('../img/page21.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.page-id-135 header#header_page {
+	background: url('../img/page22.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+#attention_bar {
 	background: $colorone;
 }
 
@@ -97,22 +120,7 @@ header.page_default_image {
 	}
 }
 
-.main {
-	padding: 50px 0px;
-}
-
-header.header_page.header_page_home {
-	height: 550px;
-	
-	#page_title {
-		h1.heading {
-			padding-top: 280px;
-		}
-	}
-}
-
-.content,
-.sidebar {
+.content {
 	h1,h3 {
 		color: $colortwo;
 	}
@@ -133,7 +141,13 @@ header.header_page.header_page_home {
 	}
 }
 
-.parallax.parallax_default_image {
+.sidebar {
+	.business_information_wrapper {
+		background: $colorone;
+	}
+}
+
+#parallax {
 	background: url('../img/page22.jpg') no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -157,85 +171,82 @@ header.header_page.header_page_home {
 }
 
 footer {
-		#logo_footer {
-			img {
-				height: 140px;
-			}
+	#logo_footer {
+		img {
+			height: 140px;
 		}
 	}
+}
 
 
 @media (min-width: 980px) and (max-width: 1220px) {
 	
-	#home_logo {
-		#logo_home {
-			img {
-				width: 400px;
-			}
-		}
-	}
+
 
 }
 	
 @media (min-width: 768px) and (max-width: 979px) {
 	
-	#home_logo {
-		#logo_home {
-			img {
-				width: 300px;
-			}
-		}
-	}
+
 	
 }
 	
 @media (min-width: 480px) and (max-width: 767px) {
 	
-	header.home_default_image {
+	header#header_home_mobile,
+	header#header_page_mobile {
+		#home_logo {
+			img {
+				height: 200px;
+			}
+		}
+	}
+	
+	header {
 		background: url('../img/home2_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	header.header_page.page_default_image {
+	header#header_page {
 		background: url('../img/home2_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-129 header.header_page.page_default_image {
+	.page-id-129 header#header_page {
 		background: url('../img/catering_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-85 header.header_page.page_default_image {
+	.page-id-85 header#header_page {
 		background: url('../img/table_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-125 header.header_page.page_default_image {
+	.page-id-125 header#header_page {
 		background: url('../img/outdoor_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-139 header.header_page.page_default_image,
-	.page-id-133 header.header_page.page_default_image {
+	.page-id-139 header#header_page,
+	.page-id-133 header#header_page {
 		background: url('../img/page20_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-131 header.header_page.page_default_image,
-	.page-id-137 header.header_page.page_default_image {
+	.page-id-131 header#header_page,
+	.page-id-137 header#header_page {
 		background: url('../img/page21_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-135 header.header_page.page_default_image {
+	.page-id-135 header#header_page {
 		background: url('../img/page22_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
@@ -245,51 +256,60 @@ footer {
 	
 @media (min-width: 0px) and (max-width: 479px) {
 	
-	header.home_default_image {
+	header#header_home_mobile,
+	header#header_page_mobile {
+		#home_logo {
+			img {
+				height: 150px;
+			}
+		}
+	}
+	
+	header {
 		background: url('../img/home2_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	header.header_page.page_default_image {
+	header#header_page {
 		background: url('../img/home2_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-129 header.header_page.page_default_image {
+	.page-id-129 header#header_page {
 		background: url('../img/catering_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-125 header.header_page.page_default_image {
+	.page-id-125 header#header_page {
 		background: url('../img/outdoor_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-85 header.header_page.page_default_image {
+	.page-id-85 header#header_page {
 		background: url('../img/table_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-139 header.header_page.page_default_image,
-	.page-id-133 header.header_page.page_default_image {
+	.page-id-139 header#header_page,
+	.page-id-133 header#header_page {
 		background: url('../img/page20_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-131 header.header_page.page_default_image,
-	.page-id-137 header.header_page.page_default_image {
+	.page-id-131 header#header_page,
+	.page-id-137 header#header_page {
 		background: url('../img/page21_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
 	}
 	
-	.page-id-135 header.header_page.page_default_image {
+	.page-id-135 header#header_page {
 		background: url('../img/page22_mobile.jpg') no-repeat;
 		background-size: 100%;
 		background-attachment: fixed;
