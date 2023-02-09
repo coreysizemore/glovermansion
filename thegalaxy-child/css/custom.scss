@@ -170,6 +170,21 @@ header#header_page {
 	}
 }
 
+/* packages */
+
+.packages-wrapper {
+	a:link,
+	a:visited {
+		display: inline-block;
+		width: 50%;
+		
+		img {
+			height: auto;
+			width: 100%;
+		}
+	}
+}
+
 footer {
 	#logo_footer {
 		img {
